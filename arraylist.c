@@ -6,9 +6,9 @@
 //normal array
 typedef struct ArrayList
 {
-  void **data;
-  int capacity;
-  int size;
+  void **data; //un arreglo dinámico para almacenar *punteros* a los datos.
+  int capacity; //el tamaño actual del arreglo
+  int size; //la cantidad de datos válidos almacenados en la lista
 } ArrayList;
 
 ArrayList *createList(void)
@@ -23,7 +23,10 @@ ArrayList *createList(void)
 
 void append(ArrayList * l, void * data)
 {
-
+  if(l->capacity >= l->size)
+  {
+    
+  }
 }
 
 void push(ArrayList * l, void * data, int i)
