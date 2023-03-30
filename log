@@ -206,3 +206,13 @@ Thu 30 Mar 2023 03:39:26 PM UTC:
  tests:  1|5
 total_score: 10/70
 5cb326e
+Thu 30 Mar 2023 03:42:22 PM UTC: 
+ arraylist.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:29:13: error: void value not ignored as it ought to be
+   29 |     l->data = (void)realloc(l->data, l->size * sizeof(void));
+      |             ^
+Compilation failed
+35afaac
