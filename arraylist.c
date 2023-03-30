@@ -44,6 +44,14 @@ void push(ArrayList * l, void * data, int i)
     l->capacity *= 2;
     l->data = (void**)realloc(l->data, l->size * sizeof(void*));
   }
+  if(l->size > i)
+  {
+    for(int k = size; i < k; k++)
+    {
+      l->data[i] = l-data[k+1];
+    }
+  }
+  l-size++;
 }
 
 void* pop(ArrayList * l, int i)
