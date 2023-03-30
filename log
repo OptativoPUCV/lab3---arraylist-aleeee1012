@@ -161,3 +161,13 @@ arraylist.c:31:11: error: assignment to ‘int’ from ‘void *’ makes intege
 cc1: all warnings being treated as errors
 Compilation failed
 ec021d4
+Thu 30 Mar 2023 03:29:16 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:31:10: error: invalid type argument of ‘->’ (have ‘int’)
+   31 |   l->size->data = data;
+      |          ^~
+Compilation failed
+8d3c2d8
