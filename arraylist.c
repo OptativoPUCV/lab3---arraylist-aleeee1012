@@ -39,7 +39,7 @@ void append(ArrayList * l, void * data)
 
 void push(ArrayList * l, void * data, int i)
 {
-  if(l->capacity <= l->size)
+  /*if(l->capacity <= l->size)
   {
     // l->data[i] = data;
     l->size *= 2;
@@ -50,7 +50,7 @@ void push(ArrayList * l, void * data, int i)
   {
     //l->data[i] = data;
     l->size++;
-  }
+  }*/
 
   
   //if(l->size < i) continue;
