@@ -39,18 +39,19 @@ void append(ArrayList * l, void * data)
 void push(ArrayList * l, void * data, int i)
 {
   if(l->size < i) return;
-  if(l->capacity <= l->size)
+  if(l->capacity == l->size)
   {
     l->capacity *= 2;
     l->data = (void**)realloc(l->data, l->size * sizeof(void*));
   }
   if(l->size > i)
   {
-    for(int k = l->size; i < (k); k++)
+    for(int k = l->size; i < (k); k--)
     {
       l->data[k] = l->data[k+1];
     }
   }
+  l->data[i] = data;
   l->size++;
 }
 
