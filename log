@@ -30,3 +30,14 @@ arraylist.c:18:31: error: ‘list’ undeclared (first use in this function); di
 arraylist.c:18:31: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 542465d
+Thu 30 Mar 2023 02:01:40 AM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:18:15: error: assignment to ‘void **’ from incompatible pointer type ‘int *’ [-Werror=incompatible-pointer-types]
+   18 |   lista->data = (int*) calloc(lista->capacity, sizeof(int));
+      |               ^
+cc1: all warnings being treated as errors
+Compilation failed
+fc6bb23
