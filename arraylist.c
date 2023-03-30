@@ -39,7 +39,8 @@ void append(ArrayList * l, void * data)
 
 void push(ArrayList * l, void * data, int i)
 {
-  //if(l->size < i) 
+  if(l->size < i) continue;
+  
     
 }
 

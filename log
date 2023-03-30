@@ -312,3 +312,13 @@ Thu 30 Mar 2023 04:03:18 PM UTC:
  tests:  3|4
 total_score: 20/70
 f98d152
+Thu 30 Mar 2023 04:04:38 PM UTC: 
+ arraylist.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘push’:
+arraylist.c:42:19: error: continue statement not within a loop
+   42 |   if(l->size < i) continue;
+      |                   ^~~~~~~~
+Compilation failed
+410d575
