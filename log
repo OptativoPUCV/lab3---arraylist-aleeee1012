@@ -240,3 +240,17 @@ Thu 30 Mar 2023 03:49:31 PM UTC:
  tests:  2|5
 total_score: 15/70
 5dea26c
+Thu 30 Mar 2023 03:50:25 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:17:24: error: too many arguments to function ‘malloc’
+   17 |   lista = (ArrayList*) malloc(1, sizeof(ArrayList));
+      |                        ^~~~~~
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:539:14: note: declared here
+  539 | extern void *malloc (size_t __size) __THROW __attribute_malloc__
+      |              ^~~~~~
+Compilation failed
+a3d7410
