@@ -13,7 +13,10 @@ typedef struct ArrayList
 
 ArrayList *createList(void)
 {
-  return NULL;
+  ArrayList *lista;
+  lista = (ArrayList*) calloc(1, sizeof(ArrayList));
+  
+  return lista;
 }
 
 void append(ArrayList * l, void * data)
