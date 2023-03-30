@@ -254,3 +254,9 @@ In file included from test.c:2:
       |              ^~~~~~
 Compilation failed
 a3d7410
+Thu 30 Mar 2023 03:50:33 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|5
+total_score: 15/70
+5067800
