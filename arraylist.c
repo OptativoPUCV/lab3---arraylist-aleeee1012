@@ -28,6 +28,8 @@ void append(ArrayList * l, void * data)
     l->size *= 2;
     l->data = realloc(l->data, l->size * sizeof(void*));
   }
+  l->size = data;
+  l->size++;
 }
 
 void push(ArrayList * l, void * data, int i)
