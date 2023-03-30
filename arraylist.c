@@ -46,12 +46,12 @@ void push(ArrayList * l, void * data, int i)
   }
   if(l->size > i)
   {
-    for(int k = size; i < k; k++)
+    for(int k = l->size; i < k; k++)
     {
-      l->data[i] = l-data[k+1];
+      l->data[i] = l->data[k+1];
     }
   }
-  l-size++;
+  l->size++;
 }
 
 void* pop(ArrayList * l, int i)
