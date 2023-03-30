@@ -25,10 +25,10 @@ void append(ArrayList * l, void * data)
 {
   if(l->capacity <= l->size)
   {
-    l->data[l->size] = data;
-    l->size *= 2;
-    l->data = (void**)realloc(l->data, l->size * sizeof(void*));
     l->capacity *= 2;
+    l->data[l->size] = data;
+    //l->size *= 2;
+    l->data = (void**)realloc(l->data, l->size * sizeof(void*));
   }
   else
   {
@@ -39,21 +39,8 @@ void append(ArrayList * l, void * data)
 
 void push(ArrayList * l, void * data, int i)
 {
-  if(l->capacity <= l->size)
-  {
-    l->data[l->size] = data;
-    l->size *= 2;
-    l->data = (void**)realloc(l->data, l->size * sizeof(void*));
-    l->capacity *= 2;
-  }
-  else
-  {
-    l->data[l->size] = data;
-    l->size++;
-  }
-
+  if(l->size < i) return;
   
-  //if(l->size < i) continue;
 }
 
 void* pop(ArrayList * l, int i)
