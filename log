@@ -18,3 +18,15 @@ Thu 30 Mar 2023 01:57:51 AM UTC:
  tests:  0|6
 total_score: 0/70
 a97322d
+Thu 30 Mar 2023 02:01:33 AM UTC: 
+ arraylist.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:18:31: error: ‘list’ undeclared (first use in this function); did you mean ‘lista’?
+   18 |   lista->data = (int*) calloc(list->capacity, sizeof(int));
+      |                               ^~~~
+      |                               lista
+arraylist.c:18:31: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+542465d

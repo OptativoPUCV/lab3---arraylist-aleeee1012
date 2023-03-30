@@ -14,8 +14,8 @@ typedef struct ArrayList
 ArrayList *createList(void)
 {
   ArrayList *lista;
-  lista = (ArrayList*) calloc(1, sizeof(ArrayList));
-  
+  lista = (ArrayList*) calloc(2, sizeof(ArrayList));
+  lista->data = (int*) calloc(list->capacity, sizeof(int));
   return lista;
 }
 
