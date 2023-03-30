@@ -48,7 +48,7 @@ void push(ArrayList * l, void * data, int i)
   {
     for(int k = l->size; i < k; k++)
     {
-      l->data[i] = l->data[k+1];
+      l->data[k] = l->data[k+1];
     }
   }
   l->size++;
