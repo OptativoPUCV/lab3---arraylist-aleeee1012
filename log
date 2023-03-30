@@ -350,3 +350,13 @@ Thu 30 Mar 2023 04:11:33 PM UTC:
  tests:  3|4
 total_score: 20/70
 df5432e
+Thu 30 Mar 2023 04:12:14 PM UTC: 
+ arraylist.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘push’:
+arraylist.c:44:14: error: ‘ArrayList’ {aka ‘struct ArrayList’} has no member named ‘i’
+   44 |     l->data[l->i] = data;
+      |              ^~
+Compilation failed
+b65098f
