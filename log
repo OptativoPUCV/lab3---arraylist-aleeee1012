@@ -470,3 +470,22 @@ Sat 01 Apr 2023 02:20:00 AM UTC:
  tests:  8|2
 total_score: 40/70
 a06005f
+Sat 01 Apr 2023 02:22:03 AM UTC: 
+ arraylist.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:5:
+arraylist.c: In function ‘get’:
+arraylist.c:82:13: error: ‘ArrayList’ {aka ‘struct ArrayList’} has no member named ‘si’; did you mean ‘size’?
+   82 |     i += l->si<e;
+      |             ^~
+      |             size
+arraylist.c:82:16: error: ‘e’ undeclared (first use in this function)
+   82 |     i += l->si<e;
+      |                ^
+arraylist.c:82:16: note: each undeclared identifier is reported only once for each function it appears in
+arraylist.c:88:11: error: returning ‘int’ from a function with return type ‘void *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   88 |   return l->size;
+      |          ~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+33b9b84
