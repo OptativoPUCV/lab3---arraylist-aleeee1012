@@ -489,3 +489,14 @@ arraylist.c:88:11: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 33b9b84
+Sat 01 Apr 2023 02:22:13 AM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘get’:
+arraylist.c:88:11: error: returning ‘int’ from a function with return type ‘void *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   88 |   return l->size;
+      |          ~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+055568e

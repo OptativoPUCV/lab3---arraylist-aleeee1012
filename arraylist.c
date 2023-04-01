@@ -79,7 +79,7 @@ void* get(ArrayList * l, int i)
 {
   if(i < 0)
   {
-    i += l->si<e;
+    i += l->size;
   }
   if(i < 0 || l->size)
   {
