@@ -81,10 +81,10 @@ void* get(ArrayList * l, int i)
   {
     i += l->size;
   }
-  if(i < 0 || l->size)
+  if(i < 0 || i >= l->size)
   {
     return NULL;
-  }
+  }  
 }
 
 int get_size(ArrayList * l)
