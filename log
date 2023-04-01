@@ -500,3 +500,14 @@ arraylist.c:88:11: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 055568e
+Sat 01 Apr 2023 02:22:29 AM UTC: 
+ arraylist.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘get’:
+arraylist.c:88:1: error: control reaches end of non-void function [-Werror=return-type]
+   88 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+fd60335
