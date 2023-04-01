@@ -539,3 +539,8 @@ arraylist.c:99:3: error: ‘lista’ undeclared (first use in this function)
 arraylist.c:99:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 71fd7ac
+Sat 01 Apr 2023 02:29:04 AM UTC: 
+ arraylist.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+ tests:  0|0
+ed5879c
