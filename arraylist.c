@@ -29,11 +29,8 @@ void append(ArrayList * l, void * data)
     l->data = (void**)realloc(l->data, l->capacity * sizeof(void*));
     l->data[l->size] = data;
   }
-  else
-  {
-    l->data[l->size] = data;
-    l->size++;
-  }
+  l->data[l->size] = data;
+  l->size++;
 }
 
 void push(ArrayList * l, void * data, int i)
